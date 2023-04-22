@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>My Deezer Subscriptions</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Deezer</th>
+            <th>Nov</th>
+            <th>Dec</th>
+            <th>Jan</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Aug</th>
+            <th>Sep</th>
+            <th>Oct</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let subscription of subscriptions">
+            <td>{{ subscription.Deezer }}</td>
+            <td>{{ subscription['6-Nov'] }}</td>
+            <td>{{ subscription['6-Dec'] }}</td>
+            <td>{{ subscription['6-Jan'] }}</td>
+            <td>{{ subscription['6-Feb'] }}</td>
+            <td>{{ subscription['6-Mar'] }}</td>
+            <td>{{ subscription['6-Apr'] }}</td>
+            <td>{{ subscription['6-May'] }}</td>
+            <td>{{ subscription['6-Jun'] }}</td>
+            <td>{{ subscription['6-Jul'] }}</td>
+            <td>{{ subscription['6-Aug'] }}</td>
+            <td>{{ subscription['6-Sep'] }}</td>
+            <td>{{ subscription['6-Oct'] }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
